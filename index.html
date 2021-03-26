@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/0ae8af7e4e.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+
+    <div class="" id="todo-list">
+      <ol v-if="lista.length > 0">
+        <li v-for="(item, i) in lista"> {{item}} <a href="#" @keyup.13="deleteItem(i)" @click="deleteItem(i)"></a></li>
+      </ol>
+      <div class="">
+        <input type="text"  placeholder="inserisci nuovo elemento" name="" value="" v-model="newItem" @keyup.13="addItem">
+        <button type="button" name="button" @click="addItem">aggiungi</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js">
+
+    </script>
+    </body>
+</html>
